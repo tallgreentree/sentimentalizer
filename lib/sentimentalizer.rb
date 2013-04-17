@@ -8,7 +8,7 @@ class Sentimentalizer
     @analyser = Analyser.new
     @analyser.train_positive "#{File.dirname(__FILE__)}/data/positive"
     @analyser.train_negative "#{File.dirname(__FILE__)}/data/negative"
-    puts @analyser.inspect
+    # puts @analyser.inspect
   end
 
   def self.analyze(sentence)
